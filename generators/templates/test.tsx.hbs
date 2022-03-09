@@ -1,0 +1,18 @@
+import { render, screen } from '@testing-library/react'
+import { ReactNode } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../../styles/theme'
+import {{pascalCase name}} from '.'
+
+const renderComponent = (children: ReactNode) =>
+  render(<ThemeProvider theme={theme}>{children}</ThemeProvider>)
+
+describe('<{{pascalCase name}} />', () => {
+  it('Should render the heading', () => {
+    const { container } = renderComponent(<{{pascalCase name}} />)
+
+    expect(screen.getByText(/{{pascalCase name}}/i)).toBeInTheDocument()
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
+})
