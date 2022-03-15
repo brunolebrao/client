@@ -7,7 +7,7 @@ export type HeadingProps = {
   lineBottom?: boolean
 }
 
-const Heading = ({
+export const Heading = ({
   children,
   color = 'white',
   lineLeft = false,
@@ -17,5 +17,3 @@ const Heading = ({
     {children}
   </S.Wrapper>
 )
-
-export default Heading
