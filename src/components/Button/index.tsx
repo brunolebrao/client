@@ -1,5 +1,4 @@
 import {
-  AnchorHTMLAttributes,
   ButtonHTMLAttributes,
   forwardRef,
   ForwardRefRenderFunction
