@@ -1,11 +1,12 @@
-import * as S from './Main.styles'
+import Logo from 'components/Logo'
+import * as S from './styles'
 
 const Main = ({
   title = 'Boilerplate',
   description = 'TypeScript, ReactJS, NextJS and Styled Components'
 }) => (
   <S.Container>
-    <S.Logo src="/img/code.svg" alt="logo" />
+    <Logo size="large" />
     <S.Title>{title}</S.Title>
     <S.Description>{description}</S.Description>
     <S.Article>
