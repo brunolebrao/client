@@ -1,5 +1,20 @@
 import * as S from './styles'
 
-const Ribbon = () => <S.Container>Ribbon</S.Container>
+export type RibbonColors = 'primary' | 'secondary'
+export type RibbonSizes = 'default' | 'small'
 
-export default Ribbon
+export type RibbonProps = {
+  children: React.ReactNode
+  color?: RibbonColors
+  size?: RibbonSizes
+}
+
+export const Ribbon = ({
+  children,
+  color = 'primary',
+  size = 'default'
+}: RibbonProps) => (
+  <S.Whapper color={color} size={size}>
+    {children}
+  </S.Whapper>
+)
