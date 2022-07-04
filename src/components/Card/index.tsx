@@ -1,10 +1,5 @@
 import { Button } from 'components/Button'
-import {
-  Ribbon,
-  RibbonColors,
-  RibbonProps,
-  RibbonSizes
-} from 'components/Ribbon'
+import { Ribbon, RibbonColors, RibbonSizes } from 'components/Ribbon'
 import {
   AddShoppingCart,
   Favorite,
@@ -15,7 +10,7 @@ import * as S from './styles'
 export type CardProps = {
   img: string
   title: string
-  subtitle: string
+  subtitle?: string
   price: string
   promotionalPrice?: string
   favorite?: boolean
